@@ -14,7 +14,7 @@ Implementation of a **Vision-Language Model (VLM)** fine-tuning pipeline using *
 
 ---
 
-## 🚀 Usage
+## Usage
 
 This repository provides both an **implementation** and a **practical guide** for fine-tuning the **SmolVLM Vision-Language Model (VLM)** using **LoRA**, and deploying it efficiently for inference using **vLLM** or **llama.cpp**.
 
@@ -30,7 +30,7 @@ For detailed fine-tuning instructions, see [Fine-tune with LoRA](#finetune-with-
 
 ---
 
-## 🧠 Fine-tune with LoRA
+## Finetune with LoRA
 
 ### Environment Setup
 
@@ -252,7 +252,7 @@ python infer.py --lora_path /path/to/LoRA \
 
 ---
 
-## 🧩 Host with vLLM
+## Host with vLLM
 
 <details>
 <summary>Expand vLLM Deployment Guide</summary>
@@ -292,7 +292,7 @@ docker run --gpus '"device=0"' \
 
 ---
 
-## 🧠 Host with llama.cpp
+## Host with llamacpp
 
 <details>
 <summary>Expand llama.cpp Deployment Guide</summary>
@@ -356,7 +356,7 @@ docker run -it --gpus '"device=0"' \
 
 ---
 
-## 🧪 Test
+## Test
 
 <details>
 <summary>Expand Testing Instructions</summary>
