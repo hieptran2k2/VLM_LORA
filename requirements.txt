@@ -1,0 +1,13 @@
+transformers==4.49.0
+pyarrow==16.1.0
+datasets==3.4.1
+bitsandbytes==0.47.0
+peft==0.17.1
+qwen-vl-utils==0.0.11
+tensorboard
+num2words
+dotenv
+aiohttp
+json
+base64
+glob
