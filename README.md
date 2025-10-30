@@ -396,6 +396,6 @@ python test/multi-request.py --url http://url_for_llama_or_vllm_host \
 
 ## 🔗 Reference
 
-**Base Model:** [HuggingFaceTB/SmolVLM-256M-Instruct](https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct)
-**vLLM:** [https://github.com/vllm-project/vllm](https://github.com/vllm-project/vllm)
-**llama.cpp:** [https://github.com/ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)
+**Base Model:** [HuggingFaceTB/SmolVLM-256M-Instruct](https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct)  
+**vLLM:** [https://github.com/vllm-project/vllm](https://github.com/vllm-project/vllm)  
+**llama.cpp:** [https://github.com/ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)  
