@@ -51,7 +51,7 @@ For detailed fine-tuning instructions, see [Fine-tune with LoRA](#finetune-with-
     pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu118
     ```
 
-  * Install **Flash Attention**:
+  * Install **Flash Attention** (Optional):
 
     ```bash
     pip install flash-attn --no-build-isolation
