@@ -288,6 +288,29 @@ docker run --gpus '"device=0"' \
     --max-model-len 4094
 ```
 
+If you’re running SmolVLM 2.2B, you need to install the num2words library before execution.
+```bash
+docker run --gpus '"device=0"' \
+    --rm \
+    -p 8005:8000 \
+    --name thangtran.vllm_smolvlm_host \
+    -e VLLM_ATTENTION_BACKEND=TRITON_ATTN_VLLM_V1 \
+    -e TORCH_CUDA_ARCH_LIST=8.0 \
+    -v $(pwd):/my_workspace \
+    --entrypoint bash \
+    vllm/vllm-openai:v0.10.1 \
+    -c "pip install num2words && \
+            python3 -m  vllm.entrypoints.openai.api_server \
+                    --model /my_workspace/Merged_lora_v2 \
+                    --dtype bfloat16 \
+                    --gpu-memory-utilization 0.50 \
+                    --max-num-batched-tokens 2048 \
+                    --tensor-parallel-size 1 \
+                    --host 0.0.0.0 \
+                    --port 8000 \
+                    --async-scheduling \
+                    --max-model-len 4094"
+```
 </details>
 
 ---
