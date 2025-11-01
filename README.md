@@ -301,7 +301,7 @@ docker run --gpus '"device=0"' \
     vllm/vllm-openai:v0.10.1 \
     -c "pip install num2words && \
             python3 -m  vllm.entrypoints.openai.api_server \
-                    --model /my_workspace/Merged_lora_v2 \
+                    --model /my_workspace/{output_save_model_merge_lora} \
                     --dtype bfloat16 \
                     --gpu-memory-utilization 0.50 \
                     --max-num-batched-tokens 2048 \
