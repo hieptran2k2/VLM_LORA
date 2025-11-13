@@ -293,7 +293,7 @@ If you’re running SmolVLM 2.2B, you need to install the num2words library befo
 docker run --gpus '"device=0"' \
     --rm \
     -p 8005:8000 \
-    --name thangtran.vllm_smolvlm_host \
+    --name vllm_vlm_lora_host \
     -e VLLM_ATTENTION_BACKEND=TRITON_ATTN_VLLM_V1 \
     -e TORCH_CUDA_ARCH_LIST=8.0 \
     -v $(pwd):/my_workspace \
